@@ -22,7 +22,9 @@ class TestController extends Controller
         }
         echo $sum;
 
-        echo 1;exit;
+        echo 1;
+        echo 2;
+        exit;
         return view('test/one');
     }
 
