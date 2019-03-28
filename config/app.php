@@ -180,6 +180,9 @@ return [
 
         App\Providers\TestServiceProvider::class,
 
+        //JWT
+        Tymon\JWTAuth\Providers\LaravelServiceProvider::class,
+
     ],
 
     /*
@@ -230,6 +233,12 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
 
         'Testtwo' => App\Facades\Testtwo::class,
+
+        //jwt
+        'JWTAuth' => Tymon\JWTAuth\Facades\JWTAuth::class
+        , 'JWTFactory' => Tymon\JWTAuth\Facades\JWTFactory::class
     ],
+
+    'test' => 12345
 
 ];
